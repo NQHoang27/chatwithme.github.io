@@ -66,12 +66,12 @@
 					<div class="msg_history">
 						<div class="incoming_msg">
 							<div class="incoming_msg_img">
-								<img src="images/soi.jpg" alt="sunil" width="200px"> 
+								<img src="images/logo.jpg" alt="sunil" width="400px"> 
 							</div>
 							<div class="received_msg" id="chatBox">
-								<div class="received_withd_msg" ng-repeat="chatMessage in chatMessages | limitTo:-15">
+								<div class="received_withd_msg" id="received_withd_msg" ng-repeat="chatMessage in chatMessages | limitTo:-9">
 									<p id="chatmessages"><span style="font-weight: bold">{{chatMessage.name}}</span> : <span>{{chatMessage.message}}</span></p>
-									<span class="time_date"> 17:01:30 | June 9</span>
+									<span class="time_date"> Vừa xong | hôm nay</span>
 								</div>
 							</div>
 						</div>
@@ -89,7 +89,7 @@
 		</div>
 	</div>
 	<script>
-		$('#chatmessages').scrollTop($('#chatmessages')[0].scrollHeight);
+		$('.msg_history').scrollTop($('.msg_history')[0].scrollHeight);
 	</script>
 </body>
 </html>

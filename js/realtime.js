@@ -28,3 +28,5 @@ app.controller('chatCtrl', ['$scope', '$firebase', function($scope, $firebase) {
 		location.reload();
 	}
 }]);
+
+
